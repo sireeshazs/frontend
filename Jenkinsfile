@@ -1,22 +1,9 @@
-pipeline{
-    agent any
+@Library('todo') _
 
-    stages {
-
-        stage('prepare Artifacts') {
-            steps {
-                sh '''
-                zip -r frontend.zip *
-            '''
-            }
-
-        }
-        stage('upload Artifacts') {
-            steps {
-                sh '''
-           curl -f -v -u admin:admin --upload-file frontend.zip http://172.31.11.104:8081/repository/frontend/frontend.zip
-        '''
-            }
-        }
-    }
-}
+todo (
+        COMPONENT             : 'frontend',
+        PROJECT_NAME          : "TODOAPP",
+        SLAVE_LABEL           : "MASTER",
+        SKIP_NEXUS_UPLOAD     : false,
+        APP_TYPE              : "NGINX"
+)
