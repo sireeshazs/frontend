@@ -1,6 +1,6 @@
-@Library('todo') _
+@Library('todoapp') _
 
-todo (
+todoapp (
         COMPONENT             : 'frontend',
         PROJECT_NAME          : "TODOAPP",
         SLAVE_LABEL           : "agent1",
