@@ -1,9 +1,9 @@
-library 'Todopipeline'
+library 'Todo'
 
-Todopipeline (
-                  COMPONENT             : "frontend",
-                  PROJECT_NAME          : "TODOPIPELINE",
-                  SLAVE_LABEL           : "MASTER",
-                  SKIP_NEXUS_UPLOAD     : false,
-                  APP_TYPE              : "NGINX"
+Todo (
+        COMPONENT             : "frontend",
+        PROJECT_NAME          : "Todo",
+        SLAVE_LABEL           : "MASTER",
+        SKIP_NEXUS_UPLOAD     : false,
+        APP_TYPE              : "NGINX"
 )
