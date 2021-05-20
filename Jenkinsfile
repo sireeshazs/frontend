@@ -1,9 +1,9 @@
-library 'Todo'
+@Library('todo') _
 
-Todo (
-        COMPONENT             : "frontend",
-        PROJECT_NAME          : "Todo",
+todo (
+        COMPONENT             : 'frontend',
+        PROJECT_NAME          : "todo",
         SLAVE_LABEL           : "MASTER",
         SKIP_NEXUS_UPLOAD     : false,
-        APP_TYPE              : "NGINX"
+        APP_TYPE              : "NODEJS"
 )
