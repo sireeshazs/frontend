@@ -1,4 +1,4 @@
-@Library"Todopipeline"
+library 'Todopipeline'
 
 Todopipeline (
                   COMPONENT             : "frontend",
