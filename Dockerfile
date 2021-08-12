@@ -1,4 +1,4 @@
-FROM       node:lts-buster as build
+FROM       node:10 as build
 WORKDIR    /app
 COPY       . /app
 RUN        npm install
