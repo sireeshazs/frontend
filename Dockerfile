@@ -6,5 +6,6 @@ RUN        npm run build
 
 FROM       nginx:stable-alpine
 COPY       --from=build /app/dist /var/www/html/frontend/dist
-COPY       todo.conf /etc/nginx/conf.d/default.conf
+COPY       ./todo.conf /etc/nginx/conf.d/default
+CMD        ["nginx", "-g", "daemon off;"]
 
