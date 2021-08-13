@@ -6,6 +6,6 @@ RUN        npm run build
 
 FROM       nginx:latest
 COPY       --from=build /app/dist /var/www/html/app/dist
-COPY       --from=build /app/todo-docker.conf /etc/nginx/conf.d/default.conf
+COPY       todo-docker.conf /etc/nginx/conf.d/default.conf
 CMD        ["nginx", "-g", "daemon off;"]
 
